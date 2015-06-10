@@ -19,11 +19,48 @@ module.exports = function (grunt) {
         jekyllServe: {
           command: 'jekyll serve'
         }
+      },
+
+      watch: {
+        sass: {
+          files: ['_scss/**/*.{scss, sass}'],
+          task: ['sass']
+        }
+      },
+
+      sass: {
+        options: {
+          sourceMap: true,
+          realtiveAssets: false,
+          outputStyle: 'expanded',
+          sassDir: '_scss',
+          cssDir: '_site/css'
+        },
+        build: {
+          files: [{
+            expand: true,
+            cwd: '_scss',
+            src: ['**/*.{scss, sass}'],
+            dest: '_site/css',
+            ext: '.css'
+          }]
+        }
+      },
+
+      concurrent: {
+        serve: [
+          'sass',
+          'watch',
+          'shell:jekyllServe'
+        ],
+        options: {
+          logConcurrentOutpu: true
+        }
       }
   });
 
   grunt.registerTask('serve', [
-    'shell:jekyllServe'
+    'concurrent:serve'
   ]);
 
   grunt.registerTask('build', [
