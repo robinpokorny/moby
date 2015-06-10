@@ -9,4 +9,31 @@
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <script>
+    (function(){
+        function addFont() {
+            var style = document.createElement('style');
+            style.rel = 'stylesheet';
+            document.head.appendChild(style);
+            style.textContent = localStorage.sourceSansPro;
+        }
+        try {
+            if (localStorage.sourceSansPro) {
+                addFont();
+            } else {
+                var request = new XMLHttpRequest();
+                request.open('GET', 'css/fonts/data-woff.css', true);
+
+                request.onload = function() {
+                    if (request.status >= 200 && request.status < 400) {
+                        localStorage.sourceSansPro = request.responseText;
+                        addFont();
+                    }
+                };
+                request.send();
+            }
+        } catch(ex) {
+      }
+    }());
+  </script>
 </head>
