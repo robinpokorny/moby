@@ -1,9 +1,26 @@
-body {
-  font-family: Merriweather Regular;
+
+
+@import "normalize";
+@import "variables";
+@import "breakpoints";
+@import "typography";
+
+@import "modules/figure";
+
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+dd,
+p,
+pre,
+table,
+fieldset,
+hr { margin-top: 0; }
+
+article {
+  max-width: 36em;
+  margin: 4 * $base-unit auto;
 }
-
-h1 { font-family: Lato Regular;}
-
-em { font-family: Merriweather Italic;}
-
-strong { font-family: Merriweather Bold;}
