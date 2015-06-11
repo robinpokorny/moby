@@ -1,0 +1,36 @@
+
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 3px;
+}
+
+figure,
+.m-figure {
+  margin: 0 0 2 * $base-unit;
+  position: relative;
+}
+
+figcaption,
+.m-figure__figcaption {
+  border-left: 2px solid $color-persian-red;
+  color: $color-dove-gray;
+  font-family: Merriweather Italic;
+  font-size: .843888889em;
+  line-height: 1.499670836;
+  padding-left: .5 * $base-unit;
+
+  @include breakpoint(lap) {
+    left: -12.875rem; // WIDTH OF THE CAPTION + 3*$BASE-UNIT
+    padding-left: $base-unit;
+    position: absolute;
+    top: 0;
+    width: 10em;
+  }
+}
+
+.m-figure__img { margin-bottom: $base-unit;
+
+  @include breakpoint(lap) { margin-bottom: 0; }
+}

@@ -1,0 +1,39 @@
+
+
+blockquote,
+.m-blockquote {
+  border: 3px solid $color-persian-red;
+  font-family: Lato;
+  height: 16rem;
+  margin: 0 0 3.5 * $base-unit;
+  width: 14rem;
+  position: relative;
+
+  &:before {
+    color: $color-dove-gray;
+    content: "“";
+    font-size: 8em;
+    left: $base-unit;
+    line-height: .76;
+    position: absolute;
+    top: $base-unit;
+  }
+}
+
+.m-blockquote__p {
+  @extend .delta;
+  background-color: $color-white;
+  bottom: $base-unit;
+  left: 1.5 * $base-unit;
+  margin-bottom: 0;
+  position: absolute;
+  width: 20rem;
+}
+
+.m-blockquote__footer {
+  @extend .small;
+  bottom: -1.5 * $base-unit;
+  color: $color-dove-gray;
+  position: absolute;
+  right: 0;
+}
