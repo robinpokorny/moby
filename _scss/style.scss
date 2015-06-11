@@ -7,6 +7,13 @@
 
 @import "modules/m-figure";
 @import "modules/m-blockquote";
+@import "modules/m-separator";
+
+* { box-sizing: border-box;
+
+  &:before,
+  &:after { box-sizing: inherit; }
+}
 
 h1,
 h2,
