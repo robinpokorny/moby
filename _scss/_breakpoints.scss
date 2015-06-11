@@ -1,0 +1,16 @@
+
+
+@mixin breakpoint($bp) {
+
+  @if $bp == lap {
+      @media (min-width: 73.75em) {
+          @content;
+      }
+  }
+
+  @else if $bp == main-nav {
+      @media (min-width: 64em) {
+          @content;
+      } //930px
+  }
+}
