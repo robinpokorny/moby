@@ -1,9 +1,32 @@
 ---
 layout: default
 ---
+<article>
+<h1>Learning Materials</h1>
+<p>The font-size property allows you to set a font size for the text in your Element. There are different ways to set font-sizes that can get a little tricky, so let us only use the most simple technique for now (you should really revisit this topic later). We will assign fixed pixel values to our elements:</p>
+<h2>The Basics</h2>
+<p>First you can see we set the font-size for everything inside of the html element to a small 10px (by default modern browsers set 16px). All the elements on the inside will inherit this value, if they don’t have <strong>a different rule for their font size</strong>. As you can see, the h1 has a value of 32px assigned, so the browser shows us a big heading while the div has the small text size without having any font-size property declared.</p>
+<h3>Edit, Save and refresh workflow</h3>
+<p>Here you see an even thicker border that is not solid and has a different color, but is also dashed instead of solid. The color is a good example for how many different types of values a lot of CSS properties accept. Let’s just say there are a lot more than would fit nicely on this page. Often you’ll <small>find yourself</small> searching the web for the accepted input values, or looking them up in the CSS spec (check links at the end of the tutorial). This color value is in HEX RGB notation. It can be convenient to use a <a href="/">color picker tool</a> (you can find them online or even use good ol’ MSPaint!) to find the color you want and then just copy and paste the value from there.</p>
+<h4>Font-family</h4>
+<p>This is what we call shorthand. <a href="blub">Some properties</a> have a shorthand format that allows us to define more properties at once, but just in one line. The order and the way it works is not always very obvious so you might <em>need to look it up on a reference</em>, but don't worry too much about it for now. It's just good that you know that it exists in case you see it. If you think it's confusing, just use the non shorthand format for your own code and specify each property at a time.</p>
+<figure class="m-figure">
+  <img class="m-figure__img" src="assets/content.png" alt="">
+  <figcaption> Click the "File" menu and then click "New File".</figcaption>
+</figure>
+<p>At this point, you have a solid understanding<a class="gloss" href="#gloss-list"></a> of how to color, size and even transform the elements on your web page. However, you probably would like to position these elements next to each other? And get in control of where excactly they are laid out on the page? Luckily, CSS offers a variety of approaches to control the layout of elements on your page.</p>
+<p class="small">The Box Model is something that describes how all of these boxes behave, and how the browser knows about the space they occupy on a page.</p>
 
-<h1>Headline</h1>
+<ul>
+  <li>learnlayout.com – The topic of layout is incredibly fun, but also takes more room to explain than this workshop can cover. If you are ready to dive into it and explore how to layout with CSS, we highly recommend this tutorial. It also comes in various languages!</li>
+  <li>A Complete Guide to Flexbox from CSS-Tricks – You have already mastered the basics of CSS layout? You understand <code>floats</code>, <code>position</code>, and even looked into responsive web design? Once you are done with all that, you should check out a more recent, but already well-supported way to build complex yet flexible layouts: Flexbox.</li>
+  <li>A Visual Guide to CSS3 Flexbox Properties – Another great resource to explore and and understand how to work with Flexbox.</li>
+  <li>Grid by Example – If you are even more adventurous and want to check out the latest and still experimental way to layout in CSS, spend some time to explore the CSS Grid Layout Module. We recommend this excellent resource by Rachel Andrew’s.</li>
+</ul>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptate ad, perspiciatis perferendis ullam quae minus, fuga sequi incidunt nostrum esse asperiores commodi dolorum atque explicabo tempora. Quae, officia, maxime.</p>
-<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, harum, earum! Quia molestias, quos repudiandae expedita suscipit, optio at ab iure vero eius iste delectus assumenda voluptatem inventore, obcaecati voluptatibus.</strong></p>
-<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi totam aspernatur optio ducimus, vero velit tempore cumque illum dolores commodi placeat adipisci recusandae atque maxime tempora distinctio possimus saepe magni.</em></p>
+<ol class="gloss-list" id="gloss-list">
+  <li>A gallery of transitions by Lea Verou</li>
+  <li>Transform live playground – a nice way to try out the most common transform functions.</li>
+  <li>Keyframer by Alex Berg – a tool to produce animation keyframes.</li>
+</ol>
+</article>
