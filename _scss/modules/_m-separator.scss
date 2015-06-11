@@ -1,0 +1,26 @@
+
+hr {
+  margin-bottom: 2 * $base-unit;
+  border: none;
+  height: 2px;
+  background-color: $color-dove-gray;
+}
+
+.hr--is-red { background-color: $color-persian-red; }
+
+.hr--has-ornament { position: relative;
+
+  &:before {
+    content: "{}";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: $color-persian-red;
+    background-color: $color-white;
+    width: 3.125rem;
+    text-align: center;
+    top: -.9375rem;
+    font-size: 1.125em  ;
+  }
+}
