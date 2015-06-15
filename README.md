@@ -17,3 +17,7 @@
 ## Run the project
 
 After installing all dependencies run `grunt serve`. This triggers `jekyll serve` and also a Grunt watch task, Sass compiler and live reload.
+
+## Content Guidelines
+### Images
+Images always have to have a ratio of 3:2.
