@@ -147,3 +147,10 @@ code {
   font-family: Inconsolata;
   font-size: 1.125em;
 }
+
+//MOZILLA SPECIFIC STYLING
+
+@-moz-document url-prefix() {
+
+  p strong { font-size: .9em; }
+}
