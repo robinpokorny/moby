@@ -73,12 +73,14 @@ ul,
 ol {
   list-style: none;
   margin-bottom: 2 * $base-unit;
-  padding-left: 0;
+  padding-left: 1.5em;
 
   li { position: relative;
 
     &:not(:last-child) { margin-bottom: 1 * $base-unit; }
   }
+
+  @include breakpoint(hand) { padding-left: 0; }
 }
 
 ul li:before {
