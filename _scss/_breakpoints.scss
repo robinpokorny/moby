@@ -2,10 +2,16 @@
 
 @mixin breakpoint($bp) {
 
+  @if $bp == hand {
+    @media (min-width: 48.75em) {
+      @content;
+    }
+  }
+
   @if $bp == lap {
-      @media (min-width: 73.75em) {
-          @content;
-      }
+    @media (min-width: 73.75em) {
+        @content;
+    }
   }
 
   @else if $bp == main-nav {

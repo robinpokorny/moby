@@ -8,6 +8,7 @@ blockquote,
   margin: 0 0 3.5 * $base-unit;
   width: 14rem;
   position: relative;
+  display: inline-block; //TODO: ADD A FIX FOR INLINE-BLOCK WHITE SPACE ISSUE
 
   &:before {
     color: $color-dove-gray;
@@ -18,6 +19,8 @@ blockquote,
     position: absolute;
     top: $base-unit;
   }
+
+  &:not(:last-child) { margin-right: 8.75rem; }  //140px
 }
 
 .m-blockquote__p {

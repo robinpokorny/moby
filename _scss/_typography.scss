@@ -73,12 +73,14 @@ ul,
 ol {
   list-style: none;
   margin-bottom: 2 * $base-unit;
-  padding-left: 0;
+  padding-left: 1.5em;
 
   li { position: relative;
 
     &:not(:last-child) { margin-bottom: 1 * $base-unit; }
   }
+
+  @include breakpoint(hand) { padding-left: 0; }
 }
 
 ul li:before {
@@ -117,7 +119,7 @@ a,
   }
 
   &:visited {
-    border-color: $color-dove-gray;
+    border-color: $color-silver-chalice;
     color: $color-dove-gray;
   }
 }
@@ -143,7 +145,13 @@ a,
 }
 
 code {
-  color: $color-persian-red;
+  color: $color-tall-poppy;
   font-family: Inconsolata;
   font-size: 1.125em;
+}
+
+//MOZILLA SPECIFIC STYLING
+@-moz-document url-prefix() {
+
+  p strong { font-size: .9em; }
 }
