@@ -1,9 +1,10 @@
 
+
 hr {
-  margin-bottom: 2 * $base-unit;
-  border: none;
-  height: 2px;
   background-color: $color-dove-gray;
+  border: none;
+  height: .125rem;
+  margin-bottom: 2 * $base-unit;
 }
 
 .hr--is-red { background-color: $color-persian-red; }
