@@ -1,0 +1,37 @@
+
+
+.highlight {
+  position: relative;
+  margin-bottom: 2 * $base-unit;
+}
+
+.language-html:after,
+.language-css:after {
+  @extend .small;
+  bottom: -1.25 * $base-unit;
+  color: $color-dove-gray;
+  position: absolute;
+  right: 0;
+}
+
+.language-html:after { content: "HTML"; }
+
+.language-css:after { content: "CSS"; }
+
+pre {
+  border-radius: .1875rem;
+  border: .0625rem solid $color-dove-gray;
+  padding: $base-unit;
+}
+
+pre code { font-size: 1em; }
+
+pre code,
+.hljs-tag { color: $color-mine-shaft; }
+
+.hljs-title,
+.hljs-attribute,
+.hljs-value,
+.hljs-class { color: $color-persian-red; }
+
+.hljs-comment { color: $color-dove-gray; }
