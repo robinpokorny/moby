@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+      "folder_exclude_patterns": [
+        "_site"
+      ]
+		}
+	],
+  // "binary_file_patterns": [
+  //   "_site"
+  // ]
+}
