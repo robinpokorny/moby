@@ -1,0 +1,28 @@
+
+
+* { box-sizing: border-box;
+
+  &:before,
+  &:after { box-sizing: inherit; }
+}
+
+@mixin l-is--centered() {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.l-width-full { width: 100%; }
+
+.l-width-extended {
+  @include l-is--centered();
+  max-width: 67em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.l-width-content {
+  @include l-is--centered();
+  max-width: 40em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
