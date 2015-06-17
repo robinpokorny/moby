@@ -1,16 +1,29 @@
 
 
-.switch {}
+.m-switch {
+  @extend %sans-serif;
+
+  margin-bottom: .5 * $base-unit;
+  text-transform: uppercase;
+}
 
 .m-switch__input { display: none; }
 
-.m-switch__input:checked + .m-switch__visual { border: .25rem solid $color-persian-red; }
+.m-switch__input:checked + .m-switch__label:before { border: .25rem solid $color-persian-red; }
 
-.m-switch__visual {
-  width: $base-unit;
-  height: $base-unit;
-  border: .6rem solid $color-persian-red; // .25:checked
-  display: inline-block;
+.m-switch__label {
+  display: block;
+  padding-left: 1.5 * $base-unit;
+  position: relative;
+
+  &:before {
+    border: .6rem solid $color-persian-red;
+    content: "";
+    display: inline-block;
+    height: $base-unit;
+    left: 0;
+    position: absolute;
+    top: .375rem;
+    width: $base-unit;
+  }
 }
-
-.switch__label {}
