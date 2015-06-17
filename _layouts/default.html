@@ -3,9 +3,12 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    <main>
+    <main class="l-width-content">
       {{ content }}
     </main>
+    <section class="l-width-extended">
+      {% include testimonial.html %}
+    </section>
     {% include footer.html %}
   </body>
 </html>
