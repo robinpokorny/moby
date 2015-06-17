@@ -1,0 +1,16 @@
+
+
+.switch {}
+
+.m-switch__input { display: none; }
+
+.m-switch__input:checked + .m-switch__visual { border: .25rem solid $color-persian-red; }
+
+.m-switch__visual {
+  width: $base-unit;
+  height: $base-unit;
+  border: .6rem solid $color-persian-red; // .25:checked
+  display: inline-block;
+}
+
+.switch__label {}
