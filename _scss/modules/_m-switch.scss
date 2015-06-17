@@ -12,9 +12,10 @@
 .m-switch__input:checked + .m-switch__label:before { border: .25rem solid $color-persian-red; }
 
 .m-switch__label {
-  display: block;
   padding-left: 1.5 * $base-unit;
   position: relative;
+
+  &:not(:first-of-type) { margin-left: $base-unit; }
 
   &:before {
     border: .6rem solid $color-persian-red;
@@ -23,7 +24,9 @@
     height: $base-unit;
     left: 0;
     position: absolute;
-    top: .375rem;
+    top: .0625rem;
     width: $base-unit;
   }
 }
+
+.m-switch__label--is-dark:before { background-color: $color-mine-shaft; }
