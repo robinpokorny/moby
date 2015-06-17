@@ -21,3 +21,12 @@ After installing all dependencies run `grunt serve`. This triggers `jekyll serve
 ## Content Guidelines
 ### Images
 Images always have to have a ratio of 3:2.
+
+## Coding Guidelines
+### Scss
+
+* `@include`, `@extend` always has to come first in a rule set
+* Use relative unites like `em`, `rem`, `%` `v-units` exclusively.
+* There are no `px` units allowed inside this project.
+* For `margin` and `padding` always mulitply or divide the `$base-unit`.
+* If you want to change or add stuff to the project make sure to check for already existing modules, classes, styles and so on.
