@@ -6,7 +6,7 @@ blockquote,
   display: inline-block; //TODO: ADD A FIX FOR INLINE-BLOCK WHITE SPACE ISSUE
   font-family: Lato Regular;
   height: 16rem;
-  margin: 0 0 3.5 * $base-unit;
+  margin: 0 8 * $base-unit 3.5 * $base-unit 0;
   position: relative;
   width: 14rem;
 
@@ -19,8 +19,6 @@ blockquote,
     position: absolute;
     top: $base-unit;
   }
-
-  &:not(:last-child) { margin-right: 8.75rem; }  //140px
 }
 
 .m-blockquote__p {
