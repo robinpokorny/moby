@@ -12,8 +12,9 @@ body {
   line-height: 1.757777778;
 
   counter-reset: gloss; //COUNTER-RESET FOR GLOSSARY NUMBERS
-
 }
+
+%sans-serif { font-family: Lato Regular, Helvetica, sans-serif; }
 
 p { margin-bottom: 2 * $base-unit; }
 
@@ -155,3 +156,4 @@ code {
 
   p strong { font-size: .9em; }
 }
+
