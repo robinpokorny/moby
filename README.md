@@ -18,6 +18,9 @@
 
 After installing all dependencies run `grunt serve`. This triggers `jekyll serve` and also a Grunt watch task, Sass compiler and live reload.
 
+## Browser Support
+This project only supports the latest versions of Chrome, Firefox and Safari.
+
 ## Content Guidelines
 ### Images
 Images always have to have a ratio of 3:2.
