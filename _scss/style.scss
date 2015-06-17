@@ -4,18 +4,14 @@
 @import "variables";
 @import "breakpoints";
 @import "typography";
+@import "layout";
 
 @import "modules/m-figure";
 @import "modules/m-blockquote";
 @import "modules/m-separator";
 @import "modules/m-code-block";
 @import "modules/m-switch";
-
-* { box-sizing: border-box;
-
-  &:before,
-  &:after { box-sizing: inherit; }
-}
+@import "modules/m-testimonial";
 
 h1,
 h2,
@@ -29,8 +25,3 @@ pre,
 table,
 fieldset,
 hr { margin-top: 0; }
-
-article {
-  max-width: 36em;
-  margin: 4 * $base-unit auto;
-}
