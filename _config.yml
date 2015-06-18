@@ -15,3 +15,15 @@ markdown: kramdown
 exclude: ['node_modules', 'css', '_scss']
 keep_files: ['_site/css']
 highlighter: pygments
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about.html
+  - title: Coaches
+    url: /coaches.html
+  - title: Attendees
+    url: /attendees.html
+  - title: Learning Materials
+    url: /materials.html
