@@ -2,6 +2,13 @@ var highlightElements;
 
 document.addEventListener("DOMContentLoaded", function(event) {
   highlightElements = document.getElementsByClassName('highlight');
+
+  syntaxSwitchElements = document.getElementsByClassName('m-switch');
+
+  for (var i = 0; i < syntaxSwitchElements.length; ++i) {
+    syntaxSwitchElements[i].classList.add('highlight');
+    syntaxLight(syntaxSwitchElements[i]);
+  }
 });
 
 var lightenEverything = function lightenEverything() {
