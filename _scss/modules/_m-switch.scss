@@ -9,7 +9,12 @@
 
 .m-switch__input { display: none; }
 
-.m-switch__input:checked + .m-switch__label:before { border: .25rem solid $color-persian-red; }
+.m-switch.is--light .m-switch__label--is-light:before { border: .25rem solid $color-persian-red; }
+
+.m-switch.is--dark .m-switch__label--is-dark:before {
+  border: .25rem solid $color-persian-red;
+  background-color: $color-mine-shaft;
+}
 
 .m-switch__label {
   padding-left: 1.5 * $base-unit;
@@ -28,5 +33,3 @@
     width: $base-unit;
   }
 }
-
-.m-switch__label--is-dark:before { background-color: $color-mine-shaft; }
