@@ -30,18 +30,27 @@ layout: default
   <li>Transform live playground – a nice way to try out the most common transform functions.</li>
   <li>Keyframer by Alex Berg – a tool to produce animation keyframes.</li>
 </ol>
+
 <div class="m-switch">
   <input class="m-switch__input" id="dark" type="radio" name="theme" onchange="darkenEverything()">
   <label class="m-switch__label m-switch__label--is-dark" for="dark">Dark</label>
   <input class="m-switch__input" id="light" type="radio" name="theme" checked="checked" onchange="lightenEverything()">
-  <label class="m-switch__label" for="light">Light</label>
+  <label class="m-switch__label m-switch__label--is-light" for="light">Light</label>
 </div>
+
 {% highlight HTML %}
 <div id="main-container">
   <h1>The h1 tag indicates the primary header of the document.</h1>
   <p>Some text.</p>
 </div>
 {% endhighlight %}
+
+<div class="m-switch">
+  <input class="m-switch__input" id="dark" type="radio" name="theme" onchange="darkenEverything()">
+  <label class="m-switch__label m-switch__label--is-dark" for="dark">Dark</label>
+  <input class="m-switch__input" id="light" type="radio" name="theme" checked="checked" onchange="lightenEverything()">
+  <label class="m-switch__label m-switch__label--is-light" for="light">Light</label>
+</div>
 
 {% highlight CSS %}
 .class {
