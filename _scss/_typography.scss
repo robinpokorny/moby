@@ -108,13 +108,21 @@ ol { counter-reset: item;
   }
 }
 
+.list-simple { padding-left: 0; }
+
+.list-simple__el { margin-bottom: 0 !important;
+
+  &:before { content: none; }
+}
+
 a,
 .anchor {
   border-bottom: 1px solid $color-mine-shaft;
   color: $color-mine-shaft;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:visited:hover {
     border-color: $color-persian-red;
     color: $color-persian-red;
   }
