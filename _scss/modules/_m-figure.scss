@@ -28,8 +28,11 @@ figcaption,
     top: 0;
     width: 10em;
   }
+
+  p { margin-bottom: 0; }
 }
 
+figure > img,
 .m-figure__img { margin-bottom: $base-unit;
 
   @include bp(xx) { margin-bottom: 0; }
