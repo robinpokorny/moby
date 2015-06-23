@@ -1,0 +1,22 @@
+
+
+.btn {
+  @extend %sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: $color-persian-red;
+  color: $color-white;
+  border: 2px solid $color-persian-red;
+  padding: .5 * $base-unit $base-unit;
+
+  &:hover,
+  &:visited:hover {
+    background-color: $color-white;
+    color: $color-persian-red;
+  }
+
+  &:visited {
+    color: $color-white;
+    border: 2px solid $color-persian-red;
+  }
+}
