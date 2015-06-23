@@ -16,6 +16,8 @@ exclude: ['node_modules', 'css', '_scss']
 keep_files: ['_site/css']
 highlighter: pygments
 
+gem: 'figure_image_tag'
+
 navigation:
   - title: Home
     url: /index.html
