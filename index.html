@@ -1,88 +1,44 @@
 ---
 layout: default
 ---
-<article>
-<h1>Learning Materials</h1>
-<p>The font-size property allows you to set a font size for the text in your Element. There are different ways to set font-sizes that can get a little tricky, so let us only use the most simple technique for now (you should really revisit this topic later). We will assign fixed pixel values to our elements:</p>
-<h2>The Basics</h2>
-<p>First you can see we set the font-size for everything inside of the html element to a small 10px (by default modern browsers set 16px). All the elements on the inside will inherit this value, if they don’t have <strong>a different rule for their font size</strong>. As you can see, the h1 has a value of 32px assigned, so the browser shows us a big heading while the div has the small text size without having any font-size property declared.</p>
-<h3>Edit, Save and refresh workflow</h3>
-<p>Here you see an even thicker border that is not solid and has a different color, but is also dashed instead of solid. The color is a good example for how many different types of values a lot of CSS properties accept. Let’s just say there are a lot more than would fit nicely on this page. Often you’ll <small>find yourself</small> searching the web for the accepted input values, or looking them up in the CSS spec (check links at the end of the tutorial). This color value is in HEX RGB notation. It can be convenient to use a <a href="/">color picker tool</a> (you can find them online or even use good ol’ MSPaint!) to find the color you want and then just copy and paste the value from there.</p>
-<hr>
-<h4>Font-family</h4>
-<p>This is what we call shorthand. <a href="blub">Some properties</a> have a shorthand format that allows us to define more properties at once, but just in one line. The order and the way it works is not always very obvious so you might <em>need to look it up on a reference</em>, but don't worry too much about it for now. It's just good that you know that it exists in case you see it. If you think it's confusing, just use the non shorthand format for your own code and specify each property at a time.</p>
-<figure class="m-figure">
-  <img class="m-figure__img" src="assets/content.png" alt="">
-  <figcaption> Click the "File" menu and then click "New File".</figcaption>
-</figure>
-<p>At this point, you have a solid understanding<a class="gloss" href="#gloss-list"></a> of how to color, size and even transform the elements on your web page. However, you probably would like to position these elements next to each other? And get in control of where excactly they are laid out on the page? Luckily, CSS offers a variety of approaches to control the layout of elements on your page.</p>
-<p class="small">The Box Model is something that describes how all of these boxes behave, and how the browser knows about the space they occupy on a page.</p>
-<hr class="hr--is-red hr--has-ornament">
-<ul>
-  <li>learnlayout.com – The topic of layout is incredibly fun, but also takes more room to explain than this workshop can cover. If you are ready to dive into it and explore how to layout with CSS, we highly recommend this tutorial. It also comes in various languages!</li>
-  <li>A Complete Guide to Flexbox from CSS-Tricks – You have already mastered the basics of CSS layout? You understand <code>floats</code>, <code>position</code>, and even looked into responsive web design? Once you are done with all that, you should check out a more recent, but already well-supported way to build complex yet flexible layouts: Flexbox.</li>
-  <li>A Visual Guide to CSS3 Flexbox Properties – Another great resource to explore and and understand how to work with Flexbox.</li>
-  <li>Grid by Example – If you are even more adventurous and want to check out the latest and still experimental way to layout in CSS, spend some time to explore the CSS Grid Layout Module. We recommend this excellent resource by Rachel Andrew’s.</li>
-</ul>
+<section>
+  <h1>Join our next events!</h1>
+  <ul>
+    <li>
+      <ul class="list-simple">
+        <li class="list-simple__el"><strong>When:</strong> Sunday, August 16th, 10:00am - ca. 6pm</li>
+        <li class="list-simple__el"><strong>Where:</strong> In Dortmund, somewhere around the <a href="/">OpenTechSchool Conference</a>.</li>
+      </ul>
+    </li>
+    <li>
+      <ul class="list-simple">
+        <li class="list-simple__el"><strong>When:</strong> Sunday, September 20th, 10:30am - ca. 6pm </li>
+        <li class="list-simple__el"><strong>Where:</strong> <a href="http://co-up.de/" target="_blank">co.up</a>, Adalbertstraße 7, 10999 Berlin.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>For updates when to register: <a href="/" class="btn">Follow @cssclasses</a></p>
+</section>
+<section>
+  <hr>
+  <p>
+    The day will include an optional workshop for beginners (and anyone who feels like refreshing their basics), as well as free hacking and collaborating for experts and newbies alike. Around 6pm, we’ll wrap up and everyone is invited to demo their achievements. Afterwards, we’ll end the day with celebratory drinks and socializing at co.up!
+  </p>
+</section>
+<section>
+  <h1 class="beta">What is CSSclasses?</h1>
+  <p>CSSClasses are one day events for people who are interested in learning how they can create and manipulate elements on a website. A group of experienced developers will be by your side all day and make sure you return home with a lot of new knowledge. The event itself is seperated into two parts: A workshop where you will learn how to get creative with CSS and a hackathon where you can then make your hands dirty and work on your own little fun project.</p>
 
-<ol class="gloss-list" id="gloss-list">
-  <li>A gallery of transitions by Lea Verou</li>
-  <li>Transform live playground – a nice way to try out the most common transform functions.</li>
-  <li>Keyframer by Alex Berg – a tool to produce animation keyframes.</li>
-</ol>
+  <h2>What is CSSclasses?</h2>
+  <p>CSSClasses are one day events for people who are interested in learning how they can create and manipulate elements on a website. A group of experienced developers will be by your side all day and make sure you return home with a lot of new knowledge.
+  The event itself is seperated into two parts: A workshop where you will learn how to get creative with CSS and a hackathon where you can then make your hands dirty and work on your own little fun project.</p>
 
-<div class="m-switch">
-  <input class="m-switch__input" id="dark" type="radio" name="theme" onchange="darkenEverything()">
-  <label class="m-switch__label m-switch__label--is-dark" for="dark">Dark</label>
-  <input class="m-switch__input" id="light" type="radio" name="theme" checked="checked" onchange="lightenEverything()">
-  <label class="m-switch__label m-switch__label--is-light" for="light">Light</label>
-</div>
+  <h2>Who can attend?</h2>
+  <p>Anyone! Learners of all levels are welcome, including beginners with absolutely no experience and advanced CSS coders. We require you to respect our core values, and make sure to check out the information for attendees page.</p>
 
-{% highlight HTML %}
-<div id="main-container">
-  <h1>The h1 tag indicates the primary header of the document.</h1>
-  <p>Some text.</p>
-</div>
-{% endhighlight %}
+  <h2>An event around CSS… really?</h2>
+  <p>Yes! We believe that CSS is one of the quickest and most fun ways to understand how websites are built and get your hands into coding. And that doesn’t mean CSS is for beginners only: Just check out the many unbelievable experiments on Codepen.io or see what leading developers are discussing at events like CSSconf EU to get inspired and see how far you can take the language.</p>
 
-<div class="m-switch">
-  <input class="m-switch__input" id="dark" type="radio" name="theme" onchange="darkenEverything()">
-  <label class="m-switch__label m-switch__label--is-dark" for="dark">Dark</label>
-  <input class="m-switch__input" id="light" type="radio" name="theme" checked="checked" onchange="lightenEverything()">
-  <label class="m-switch__label m-switch__label--is-light" for="light">Light</label>
-</div>
-
-{% highlight CSS %}
-.class {
-  margin: 1rem;
-}
-/* Type something */
-{% endhighlight %}
-
-{% highlight HTML %}
-<head>
-<!-- ... -->
-  <style type="text/css">
-    .changeonhover {
-      color: white;
-      background-color: green;
-      text-align: center;
-      width: 300px;
-      height: 200px;
-      font-family: sans-serif;
-      border: 5px solid black;
-      transition: 1s all;
-    }
-    .changeonhover:hover {
-      background-color: blue;
-      width: 600px;
-      height: 300px;
-    }
-  </style>
-</head>
-<body>
-  <div class="changeonhover">Hover me! Hover Me!</div>
-</body>
-
-{% endhighlight %}
-</article>
+  <h2>Who is organizing this?</h2>
+  <p>The volunteer teams behind CSSconf EU and Open Tech School. We have experience in teaching workshops and organzing events, and our motivation is to share knowledge and passion for building fun and beautiful things for the web. We subscribe to the core values of Open Tech School and are committed to create a safe and encouraging space for learners and coaches.</p>
+</section>
