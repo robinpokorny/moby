@@ -2,8 +2,8 @@
 
 // MODULE CLASS IS DIFFERENT BC WE CAN'T CHANGE IT
 .highlight {
-  position: relative;
   margin-bottom: 2 * $base-unit;
+  position: relative;
 }
 
 .language-html:after,
@@ -20,14 +20,13 @@
 .language-css:after { content: "CSS"; }
 
 pre {
-  border-radius: .1875rem;
-  border: .0625rem solid $color-dove-gray;
-  padding: $base-unit;
   background-color: $color-white;
+  border: .0625rem solid $color-dove-gray;
+  border-radius: .1875rem;
+  padding: $base-unit;
 }
 
 pre code { font-size: 1em; }
-
 
 // COLOR SCHEME = LIGHT !DEFAULT
 pre code,

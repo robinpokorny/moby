@@ -1,3 +1,5 @@
+
+
 $breakpoints: (
   "x": 48.75em,
   "xx": 73.75em
@@ -5,9 +7,7 @@ $breakpoints: (
 
 @mixin bp($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
-    @media(min-width: map-get($breakpoints, $breakpoint)) {
-      @content;
-    }
+    @media(min-width: map-get($breakpoints, $breakpoint)) { @content; }
   }
   @else {
     @warn "Unfortunately, no value could be retrieved from '#{$breakpoint}'." + "Available breakpoints are: #{map-keys($breakpoints)}.";

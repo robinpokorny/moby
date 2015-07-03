@@ -2,9 +2,9 @@
 
 blockquote,
 .m-blockquote {
+  @extend %sans-serif;
   border: .1875rem solid $color-persian-red;
   display: inline-block; //TODO: ADD A FIX FOR INLINE-BLOCK WHITE SPACE ISSUE
-  font-family: Lato Regular;
   height: 16rem;
   margin: 0 8 * $base-unit 3.5 * $base-unit 0;
   position: relative;
@@ -12,7 +12,7 @@ blockquote,
 
   &:before {
     color: $color-dove-gray;
-    content: "“";
+    content: '“';
     font-size: 8em;
     left: $base-unit;
     line-height: .76;

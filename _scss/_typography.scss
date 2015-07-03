@@ -78,7 +78,7 @@ ol {
 
   li { position: relative;
 
-    &:not(:last-child) { margin-bottom: 1 * $base-unit; }
+    &:not(:last-child) { margin-bottom: $base-unit; }
   }
 
   @include bp(x) { padding-left: 0; }
@@ -164,4 +164,3 @@ code {
 
   p strong { font-size: .9em; }
 }
-

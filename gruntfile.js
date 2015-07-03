@@ -2,22 +2,17 @@
 
 module.exports = function (grunt) {
 
-    // Show elapsed time after tasks run to visualize performance
-    require('time-grunt')(grunt);
-    // Load all Grunt tasks that are listed in package.json automagically
-    require('load-grunt-tasks')(grunt);
+    require('time-grunt')(grunt); // Show elapsed time after tasks run to visualize performance
+    require('load-grunt-tasks')(grunt); // Load all Grunt tasks that are listed in package.json automagically
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
         // shell commands for use in Grunt tasks
         shell: {
-            jekyllBuild: {
-                command: 'jekyll build'
-            },
-            jekyllServe: {
-                command: 'jekyll serve'
-            }
+            jekyllServe: { command: 'jekyll serve' },
+            jekyllBuild: { command: 'jekyll build' }
+
         },
 
         // watch for files to change and run tasks when they do
@@ -56,17 +51,12 @@ module.exports = function (grunt) {
                 'watch',
                 'shell:jekyllServe'
             ],
-            options: {
-                logConcurrentOutput: true
-            }
+            options: { logConcurrentOutput: true }
         },
-
     });
 
     // Register the grunt serve task
-    grunt.registerTask('serve', [
-        'concurrent:serve'
-    ]);
+    grunt.registerTask('serve', [ 'concurrent:serve' ]);
 
     // Register the grunt build task
     grunt.registerTask('build', [
@@ -76,5 +66,4 @@ module.exports = function (grunt) {
 
     // Register build as the default task fallback
     grunt.registerTask('default', 'build');
-
 };

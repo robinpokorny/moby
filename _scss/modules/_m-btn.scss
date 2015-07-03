@@ -2,12 +2,12 @@
 
 .btn {
   @extend %sans-serif;
-  text-transform: uppercase;
-  display: inline-block;
   background-color: $color-persian-red;
-  color: $color-white;
   border: 2px solid $color-persian-red;
+  color: $color-white;
+  display: inline-block;
   padding: .5 * $base-unit $base-unit;
+  text-transform: uppercase;
 
   &:hover,
   &:visited:hover {
@@ -16,7 +16,7 @@
   }
 
   &:visited {
-    color: $color-white;
-    border: 2px solid $color-persian-red;
+    border: inherit;
+    color: inherit;
   }
 }
