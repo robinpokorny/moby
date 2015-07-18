@@ -16,7 +16,7 @@
   }
 
   &:visited {
-    border: inherit;
-    color: inherit;
+    border: 2px solid $color-persian-red;
+    color: $color-white;
   }
 }

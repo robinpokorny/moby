@@ -1,0 +1,31 @@
+
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 1px;
+
+  &:hover { background-position: 0 -31px;}
+}
+
+.icon-only {
+  @extend .icon;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999em;
+  border-bottom: none;
+}
+
+.icon-twitter {
+  background-image: url(../assets/svg/icon-twitter.svg);
+}
+
+.icon-github {
+  background-image: url(../assets/svg/icon-github.svg);
+}
+
+.icon-website {
+  background-image: url(../assets/svg/icon-compass.svg);
+}

@@ -1,0 +1,34 @@
+
+
+.page-footer {
+  @extend %sans-serif;
+  font-size: .777777778em;
+  line-height: 1.405864198;;
+  background-color: $color-mine-shaft;
+  color: $color-white;
+  border-top: 2px solid $color-dove-gray;
+  padding-top: 2 * $base-unit;
+  padding-bottom: 2 * $base-unit;
+}
+
+.page-footer .icon {
+  background-position: 0 -62px;
+
+  &:hover { background-position: 0 -30px; }
+}
+
+.page-footer__a {
+  color: $color-white;
+  border-color: $color-white;
+}
+
+.page-footer__p { margin-bottom: 0; }
+
+.page-footer .list-simple { margin-bottom: .25 * $base-unit; }
+
+.page-footer .list-simple__el--is-horizontal:not(:first-child) {
+  vertical-align: middle;
+  margin-left: 0;
+}
+
+.page-footer .list-simple__el--is-horizontal:first-child { margin-right: .5 * $base-unit; }
