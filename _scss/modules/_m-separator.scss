@@ -11,7 +11,7 @@ hr {
 
 .hr--has-ornament { position: relative;
 
-  &:before {
+  &::before {
     background-color: $color-white;
     content: url(../assets/svg/m-separator__ornament.svg);
     display: block;

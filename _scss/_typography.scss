@@ -84,7 +84,7 @@ ol {
   @include bp(x) { padding-left: 0; }
 }
 
-ul li:before {
+ul li::before {
   background-color: $color-persian-red;
   content: "";
   display: block;
@@ -97,7 +97,7 @@ ul li:before {
 
 ol { counter-reset: item;
 
-  li:before {
+  li::before {
     color: $color-persian-red;
     content: counter(item) ". ";
     counter-increment: item;
@@ -132,7 +132,7 @@ a,
   color: $color-persian-red;
   vertical-align: super;
 
-  &:before {
+  &::before {
     content: counter(gloss);
     counter-increment: gloss;
   }

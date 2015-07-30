@@ -23,7 +23,7 @@
 
   &:not(:first-of-type) { margin-left: $base-unit; }
 
-  &:before {
+  &::before {
     border: .6rem solid $color-persian-red;
     content: '';
     display: inline-block;

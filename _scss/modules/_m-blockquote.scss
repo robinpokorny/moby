@@ -10,7 +10,7 @@ blockquote,
   position: relative;
   width: 14rem;
 
-  &:before {
+  &::before {
     color: $color-dove-gray;
     content: '“';
     font-size: 8em;
