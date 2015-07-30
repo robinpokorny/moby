@@ -3,21 +3,36 @@
 blockquote,
 .m-blockquote {
   @extend %sans-serif;
-  border: .1875rem solid $color-persian-red;
+  width: 100%;
+  max-width: 80%;
   display: inline-block; //TODO: ADD A FIX FOR INLINE-BLOCK WHITE SPACE ISSUE
-  height: 16rem;
-  margin: 0 8 * $base-unit 3.5 * $base-unit 0;
   position: relative;
-  width: 14rem;
+  margin: 0 0 4 * $base-unit 0;
+  padding-right: 2 * $base-unit;
+  padding-left: 2 * $base-unit;
+
+  @include bp(x) { max-width: 33.333%; }
+
+  @include bp(xx) {
+    border: .1875rem solid $color-persian-red;
+    width: 14rem;
+    margin: 0 8 * $base-unit 3.5 * $base-unit 0;
+    height: 16rem;
+  }
 
   &::before {
     color: $color-dove-gray;
     content: '“';
     font-size: 8em;
-    left: $base-unit;
+    left: -$base-unit;
+    top: -$base-unit;
     line-height: .76;
     position: absolute;
-    top: $base-unit;
+
+    @include bp(xx) {
+      top: $base-unit;
+      left: $base-unit;
+    }
   }
 }
 
@@ -27,8 +42,11 @@ blockquote,
   bottom: $base-unit;
   left: 1.5 * $base-unit;
   margin-bottom: 0;
-  position: absolute;
-  width: 20rem;
+
+  @include bp(xx) {
+    width: 20rem;
+    position: absolute;
+  }
 }
 
 .m-blockquote__footer {
@@ -36,5 +54,7 @@ blockquote,
   bottom: -1.5 * $base-unit;
   color: $color-dove-gray;
   position: absolute;
-  right: 0;
+  right: 2 * $base-unit;
+
+  @include bp(xx) { right: 0; }
 }
