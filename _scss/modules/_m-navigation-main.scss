@@ -3,24 +3,23 @@
 .navigation__toggle {
   position: fixed;
   z-index: 1000;
-  margin: 1em;
+  margin: 2rem;
   padding: 0;
-  width: 2.5em;
-  height: 2.5em;
+  width: 4.0625rem;
+  height: 4.0625rem;
   border: 0;
-  text-indent: 2.5em;
-  font-size: 1.5em;
+  text-indent: 5em;
   color: transparent;
   background: transparent;
   outline: none;
 
   &::before {
     position: absolute;
-    top: .5em;
-    right: .5em;
-    bottom: .5em;
-    left: .5em;
-    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+    top: 1rem;
+    right: .625rem;
+    bottom: 1rem;
+    left: .625rem;
+    background: linear-gradient($color-mine-shaft 20%, transparent 20%, transparent 40%, $color-mine-shaft 40%, $color-mine-shaft 60%, transparent 60%, transparent 80%, $color-mine-shaft 80%);
     content: '';
   }
 
@@ -59,17 +58,17 @@
 .navigation {
   position: absolute;
   z-index: 1001;
-  width: 280px;
+  width: 17.5rem;
   height: 100%;
   font-size: 1.15em;
-  transform: translate3d(-280px, 0, 0);
+  transform: translate3d(-17.5rem, 0, 0);
   transition: transform .4s;
 }
 
 .navigation__element {
   position: relative;
   z-index: 1000;
-  padding: 3em 1em 0;
+  padding-top: 5 * $base-unit;
 }
 
 .navigation__element,
@@ -108,4 +107,25 @@
 .show-menu .l-container-content::before {
   opacity: 1;
   transition: opacity .4s;
+}
+
+.navigation__list {
+  margin-bottom: 0;
+  padding-left: 1.5 * $base-unit;
+}
+
+.navigation__list-item::before { content: none; }
+
+.navigation__a {
+  @extend %sans-serif;
+  text-transform: uppercase;
+  border-bottom: none;
+  color: $color-white;
+
+  &:visited { color: $color-white; }
+}
+
+.navigation__logo {
+  width: 60%;
+  margin: 0 auto 3 * $base-unit;
 }
