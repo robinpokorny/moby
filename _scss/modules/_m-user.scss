@@ -1,30 +1,27 @@
 
 
+$module-namespace: 'user';
+
 .flex-row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.user {
-  width: 100%;
-  max-width: 33%;
+.#{$module-namespace} {
+  flex: 1 1 calc(33% - 36px);
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
-.user__img {
+.#{$module-namespace}__img {
   border-radius: 50%;
   width: 90%;
   display: block;
   margin-bottom: $base-unit;
 }
 
-.user__text {
+.#{$module-namespace}__text {
   @extend %sans-serif;
   text-transform: uppercase;
   position: relative;
@@ -41,4 +38,4 @@
   }
 }
 
-.user__list { padding-left: $base-unit; }
+.#{$module-namespace}__list { padding-left: $base-unit; }
