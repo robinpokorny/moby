@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Boilerplate"
+---
+
+## CSS
+* [CSS - What is that?](#whatiscss)
+* [Where do I put my CSS?](#inlinecss)
+* [Basic CSS syntax](#basiccsssyntax)
+* [Useful properties](#properties)
+* [Shorthand](#shorthand)
+* [Font-Family](#font-family)
+* [Font-Size](#font-size)
+* [Border](#border)
+* [The Box Model](#boxmodel)
+* [Hover](#hover)
+* [Class Selector](#classes)
+* [Transitions](#transitions)
+* [Transforms](#transforms)
+* [More Selectors](#moreselectors)
