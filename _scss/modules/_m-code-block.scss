@@ -24,6 +24,8 @@ pre {
   border: .0625rem solid $color-dove-gray;
   border-radius: .1875rem;
   padding: $base-unit;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 pre code { font-size: 1em; }
