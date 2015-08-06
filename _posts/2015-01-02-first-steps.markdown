@@ -15,9 +15,9 @@ image:
 ---
 
 ##The Basics
-* [How to create a file called index.html](http://cssclasses.cssconf.eu/learning-materials/#index)
-* [How to open it in the browser](http://cssclasses.cssconf.eu/learning-materials/#open_index)
-* [Edit, Save and refresh workflow](http://cssclasses.cssconf.eu/learning-materials/#edit_save_refresh)
+* [How to create a file called index.html](#how-to-create-a-file-called-indexhtml)
+* [How to open it in the browser](#how-to-open-indexhtml-in-your-browser)
+* [Edit, Save and refresh workflow](#edit-save-and-refresh-workflow)
 
 ###How to create a file called index.html
 Now it is time for you to create your first website! Open your text editor and create a new file. In your text editor (e.g. Sublime Text), click the `File` menu and then click `New File`.

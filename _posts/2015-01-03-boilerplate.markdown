@@ -4,11 +4,10 @@ title: "Boilerplate"
 ---
 
 ##Basic HTML & HTML boilerplate
-* [Elements and Tags](http://cssclasses.cssconf.eu/learning-materials/#elementstags)
-* [HTML Boilerplate](http://cssclasses.cssconf.eu/learning-materials/#boilerplate)
-* [Pageflow (block, inline and inline-block)](http://cssclasses.cssconf.eu/learning-materials/#pageflow)
-* [Images](http://cssclasses.cssconf.eu/learning-materials/#images)
-* [Links](http://cssclasses.cssconf.eu/learning-materials/#links)
+* [Elements and Tags](#elements-and-tags)
+* [Pageflow](#pageflow)
+* [HTML Boilerplate](#html-boilerplate)
+* [(Practical) Elements](#practical-elements)
 
 ###Elements and Tags
 Elements and Tags are the building blocks of HTML.
@@ -127,9 +126,9 @@ And there we are, this is our first valid HTML file! Here it is again, so you ca
 </html>
 {% endhighlight %}
 
-Here are some practical elements:
+### (Practical) Elements
 
-###Headings (h1-h6)
+#### Headings (h1-h6)
 
 There is a hierarchy of heading elements that you can use for headlines. They start with h1 and end with h6.
 
@@ -148,7 +147,7 @@ There is a hierarchy of heading elements that you can use for headlines. They st
 <h6>heading 6</h6>
 {% endhighlight %}
 
-###Paragraph
+#### Paragraph
 This is the perfect tag if you want to markup text. Even this text is wrapped in a p.
 
 <div class="m-switch">
@@ -161,7 +160,7 @@ This is the perfect tag if you want to markup text. Even this text is wrapped in
 <p>Some text</p>
 {% endhighlight %}
 
-###Strong, em, break
+#### Strong, em, break
 These are some inline Elements that you can nest inside a paragraph. Strong and emphasis give some meaning to pieces of text, while break forces a
 linebreak.
 
@@ -176,7 +175,7 @@ linebreak.
 <br>break
 {% endhighlight %}
 
-###Images
+#### Images
 The image tag is special as it is self-closing, it has no closing tag (like the break tag). It also has a special attribute the src which carries the path to the actual image. The alt attribute is a placeholder, if the image does for some reason not load.
 
 <div class="m-switch">
@@ -189,7 +188,7 @@ The image tag is special as it is self-closing, it has no closing tag (like the 
 <img src="http://placekitten.com/500/200" alt="cat content">
 {% endhighlight %}
 
-###Links
+#### Links
 Links take the user to another page. The tag is simply an a which stands for anchor. It comes with the href (hyper reference) attribute, that tells the browser where to go to. You can also add a title attribute that shows once the user hovers over it.
 
 <div class="m-switch">
@@ -202,7 +201,7 @@ Links take the user to another page. The tag is simply an a which stands for anc
 <a href="http://cssconf.eu" title="CSS Conf EU">CSSConfEU</a>
 {% endhighlight %}
 
-###Div
+#### Div
 The div element is an element that does not have a special meaning or special styling. It’s perfect for grouping other elements together and assigning them a class or an id.
 
 <div class="m-switch">
@@ -214,4 +213,3 @@ The div element is an element that does not have a special meaning or special st
 {% highlight HTML %}
 <div>I do nothing special</div>
 {% endhighlight %}
-***
