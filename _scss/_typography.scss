@@ -113,6 +113,7 @@ a,
   border-bottom: 1px solid $color-mine-shaft;
   color: $color-mine-shaft;
   text-decoration: none;
+  transition: border-color .4s, color .4s;
 
   &:hover,
   &:visited:hover {
