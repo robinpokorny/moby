@@ -1,14 +1,8 @@
-
-
 .page-header {
-  background-image: url(../assets/images/header.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-height: 800px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
 }
 
 .page-header__logo {
