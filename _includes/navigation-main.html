@@ -7,7 +7,7 @@
           {% assign current = 'current' %}
       {% endif %}
       <li class="{{ current }} navigation__list-item">
-          <a class="navigation__a" href="{{ link.url }}">{{ link.title }}</a>
+          <a class="navigation__a hover-effect" data-hover="{{ link.title }}"href="{{ link.url }}">{{ link.title }}</a>
       </li>
   {% endfor %}
   </ul>

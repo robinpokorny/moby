@@ -39,6 +39,11 @@
   background: transparent;
   color: transparent;
 
+  &:hover::before,
+  &:hover::after {
+    background: $color-persian-red;
+  }
+
   &::before,
   &::after {
     content: '';
@@ -75,7 +80,7 @@
 .navigation__close {
   opacity: 0;
   transform: translate3d(-160px, 0, 0);
-  transition: opacity 0 .3s, transform 0 .3s;
+  transition: opacity 0s .3s, transform 0s .3s;
   transition-timing-function: cubic-bezier(.17,.67,.1,1.27);
 }
 
@@ -112,9 +117,15 @@
 .navigation__list {
   margin-bottom: 0;
   padding-left: 1.5 * $base-unit;
+  padding-right: 1.5 * $base-unit;
 }
 
-.navigation__list-item::before { content: none; }
+.navigation__list-item { color: $color-white;
+
+  &::before { content: none; }
+}
+
+.navigation__list-item.current { border-bottom: 2px solid $color-persian-red;; }
 
 .navigation__a {
   @extend %sans-serif;
@@ -128,4 +139,27 @@
 .navigation__logo {
   width: 60%;
   margin: 0 auto 3 * $base-unit;
+}
+
+
+.hover-effect {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-width: 0;
+    content: attr(data-hover);
+    transition: max-width .5s;
+    white-space: nowrap;
+    color: $color-persian-red;
+    border-bottom-color: $color-persian-red;
+  }
+
+  &:hover { color: currentColor !important; } //OVerrides the default
+
+  &:hover::before { max-width: 100%; }
 }
