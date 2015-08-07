@@ -29,5 +29,5 @@ The `~` sibling selector selects all elements that are *neighbors* of a selected
 
 While these rules look very complex, they are not so bad when you take them apart. The first selector `.vegetable-checkbox` looks for anything that has the class "vegetable-checkbox" in the HTML. By adding the `:checked` that rule only applies if it is a checkbox that is checked. Then the `~` indicates that another selector follows. This following selector in the end is our target that gets the styles in the rule if there is any element in the neighborhood that is found by the first selector.
 
-<p data-height="237" data-theme-id="17669" data-slug-hash="vOPBLd" data-default-tab="result" data-user="verpixelt" class='codepen'>See the Pen <a href='http://codepen.io/verpixelt/pen/vOPBLd/'>vOPBLd</a> by Kevin Lorenz (<a href='http://codepen.io/verpixelt'>@verpixelt</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="476" data-theme-id="17669" data-slug-hash="vOPBLd" data-default-tab="result" data-user="verpixelt" class='codepen'>See the Pen <a href='http://codepen.io/verpixelt/pen/vOPBLd/'>vOPBLd</a> by Kevin Lorenz (<a href='http://codepen.io/verpixelt'>@verpixelt</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
