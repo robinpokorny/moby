@@ -48,3 +48,12 @@ At this point, you have a solid understanding of how to color, size and even tra
 * <a href="http://cssguidelin.es/" target="_blank">cssguidelin.es</a> – High-level advice and guidelines for writing sane, manageable, scalable CSS
 * <a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">The 30 CSS Selectors you Must Memorize</a>
 * <a href="http://stackoverflow.com/questions/5797014/why-do-browsers-match-css-selectors-from-right-to-left" target="_blank">Why do browsers match CSS selectors from right to left</a>
+
+#### General Resources
+
+* <a href="http://www.w3.org/TR/html5/" target="_blank">The official HTML5 Specification</a> - Well, almost. But if they ever make an official specification of what HTML5 is, this is the W3C Candidate Recommendation. If you really want to know how something is defined, go here and read up.
+* <a href="http://www.w3.org/standards/techs/css#w3c_all" target="_blank">The official CSS3 *stuff*</a> - Unlike HTML5, CSS3 is not defined in one big specification. It consists of a lot of puzzle pieces called modules that each define a specific subset of CSS properties. Again, don’t be afraid to have a look at this at some point (it’s ok if that point is somewhere in the future), even if it seems overly technical at first.
+* <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Mozilla Developer Network CSS Portal</a>
+* <a href="http://caniuse.com/" target="_blank">caniuse</a> – Can I use provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
+* <a href="http://devdocs.io/css" target="_blank">Search the CSS reference</a>
+* <a href="http://devdocs.io/html" target="_blank">Search the HTML reference</a>
