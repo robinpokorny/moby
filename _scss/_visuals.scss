@@ -12,14 +12,23 @@
 
 .icon-only {
   @extend .icon;
-  display: block;
+  display: inline-block;
   overflow: hidden;
   text-indent: -9999em;
   border-bottom: none;
 }
 
-.icon-twitter { background-image: url('../assets/svg/icon-twitter.svg'); }
+$icons:(twitter, github, website);
+  @each $icon in $icons {
+    .icon-#{$icon} {background-image: url('../assets/svg/icon-#{$icon}.svg');}
+  }
 
-.icon-github { background-image: url('../assets/svg/icon-github.svg'); }
+.align-bottom {
+  vertical-align: bottom;
+  float: right;
+}
 
-.icon-website { background-image: url('../assets/svg/icon-compass.svg'); }
+.space-around {
+  margin-right: $base-unit;
+  margin-left: $base-unit;
+}
