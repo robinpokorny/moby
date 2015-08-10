@@ -61,7 +61,7 @@ h4,
 }
 
 small,
-.small {
+%small {
   font-size: .666666667em;
   line-height: 1.405864198;
 }
@@ -86,7 +86,7 @@ ol {
 
 ul li::before {
   background-color: $color-persian-red;
-  content: "";
+  content: '';
   display: block;
   height: .5rem;
   left: -1.5 * $base-unit;
@@ -99,7 +99,7 @@ ol { counter-reset: item;
 
   li::before {
     color: $color-persian-red;
-    content: counter(item) ". ";
+    content: counter(item) '. ';
     counter-increment: item;
     font-family: Merriweather Bold;
     left: -1.5 * $base-unit;
@@ -128,8 +128,8 @@ a,
 }
 
 .gloss {
-  @extend .small;
-  border-bottom: none;
+  @extend %small;
+  border-bottom: 0;
   color: $color-persian-red;
   vertical-align: super;
 
@@ -141,7 +141,7 @@ a,
 
 .gloss-list li:after {
   color: $color-persian-red;
-  content: "↩";
+  content: '↩';
   font-family: Merriweather Bold;
   position: relative;
   right: -.5 * $base-unit;

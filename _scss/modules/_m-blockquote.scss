@@ -58,7 +58,7 @@ blockquote,
 }
 
 .m-blockquote__footer {
-  @extend .small;
+  @extend %small;
   bottom: -1.5 * $base-unit;
   color: $color-dove-gray;
   position: absolute;

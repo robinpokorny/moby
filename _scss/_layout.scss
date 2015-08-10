@@ -6,6 +6,19 @@
   &::after { box-sizing: inherit; }
 }
 
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+dd,
+p,
+pre,
+table,
+fieldset,
+hr { margin-top: 0; }
+
 @mixin l-is--centered() {
   margin: 0 auto;
   width: 100%;

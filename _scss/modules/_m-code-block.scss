@@ -8,7 +8,7 @@
 
 .language-html:after,
 .language-css:after {
-  @extend .small;
+  @extend %small;
   bottom: -1.25 * $base-unit;
   color: $color-dove-gray;
   position: absolute;
