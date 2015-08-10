@@ -1,11 +1,5 @@
 ---
 layout: default
-team:
-  user:
-    name: 'Kevin'
-    twitter: 'https://twitter.com/verpixelt'
-  user:
-    name: Max
 ---
 <section>
   <h1>About</h1>
@@ -15,7 +9,13 @@ team:
     {% include user.html %}
   </div>
   <h2>Coaches</h2>
-  <div class="flex-row">
-    {% include user.html %}
-  </div>
+
+    {% if site.data.coaches %}
+      <ul>
+        {% for coach in site.data.coaches %}
+          {% include team-element.html name=coach.name twitter=coach.twitter github=coach.github %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+
 </section>
