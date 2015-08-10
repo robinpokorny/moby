@@ -1,20 +1,18 @@
 # Site settings
-title: Codename moby
-email: kevin@cssconf.eu
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: CSSclasses
+email: contact@cssconf.eu
+description: "CSSclasses is for beginners and experts alike: Using CSS as a simple and low-barrier entry language, we empower people to understand their browser and to learn how to experiment with code. Workshop and hackathon in one event."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://cssclasses.cssconf.eu"
+twitter_username: cssclasses
+github_username:  cssconf
 
 # Build settings
 markdown: kramdown
 exclude: ['node_modules', 'css', '_scss']
 keep_files: ['_site/css']
 highlighter: pygments
+permalink: pretty
 
 gem: 'figure_image_tag'
 
