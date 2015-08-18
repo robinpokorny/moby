@@ -9,13 +9,11 @@ layout: default
     {% include user.html %}
   </div>
   <h2>Coaches</h2>
-
-    {% if site.data.coaches %}
-      <ul>
-        {% for coach in site.data.coaches %}
-          {% include team-element.html name=coach.name twitter=coach.twitter github=coach.github %}
-        {% endfor %}
-      </ul>
-    {% endif %}
-
+  {% if site.data.coaches %}
+    <ul>
+      {% for coach in site.data.coaches %}
+        {% include team-element.html name=coach.name twitter=coach.twitter github=coach.github %}
+      {% endfor %}
+    </ul>
+  {% endif %}
 </section>
