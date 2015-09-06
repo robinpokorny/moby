@@ -12,7 +12,7 @@
 
 * **Grunt Plugins** – Run `npm install`
 
-* **Bower Dependencies** - Run `bower install classie snap.svg`
+* **Bower Dependencies** - Run `bower install`
 
 * **Livereload Browser Extension** – [http://livereload.com/extensions/](http://livereload.com/extensions/)
 
