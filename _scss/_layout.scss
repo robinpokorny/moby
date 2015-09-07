@@ -43,12 +43,20 @@ body {
 .l-width-content {
   @include l-is--centered();
   max-width: 46rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+
+  @include bp(x) {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
-  position: relative;
+  }
 }
 
-.l--has-pt { padding-top: 8 * $base-unit; }
+.l--has-pt { padding-top: 4 * $base-unit;
+
+  @include bp(x) { padding-top: 8 * $base-unit; }
+}
 
 .l-container-content {
   overflow-y: scroll;
