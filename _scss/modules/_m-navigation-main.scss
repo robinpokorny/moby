@@ -3,7 +3,7 @@
 .navigation__toggle {
   position: fixed;
   z-index: 1000;
-  margin: 2rem;
+  margin: .2rem .5rem;
   padding: 0;
   width: 4.0625rem;
   height: 4.0625rem;
@@ -19,9 +19,11 @@
     right: .625rem;
     bottom: 1rem;
     left: .625rem;
-    background: linear-gradient($color-mine-shaft 20%, transparent 20%, transparent 40%, $color-mine-shaft 40%, $color-mine-shaft 60%, transparent 60%, transparent 80%, $color-mine-shaft 80%);
+    background: linear-gradient($color-silver-chalice 20%, transparent 20%, transparent 40%, $color-silver-chalice 40%, $color-silver-chalice 60%, transparent 60%, transparent 80%, $color-silver-chalice 80%);
     content: '';
   }
+
+  @include bp(x) { margin: 2rem; }
 
   &:hover { opacity: .6; }
 }
