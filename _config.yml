@@ -27,3 +27,5 @@ navigation:
     url: /attendees.html
   - title: Learning Materials
     url: /materials.html
+  - title: Code of Conduct
+    url: /code-of-conduct.html
