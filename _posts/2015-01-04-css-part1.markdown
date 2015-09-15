@@ -4,7 +4,7 @@ title: "CSS Basics"
 ---
 
 ## CSS
-* [CSS - What is that?](#whatiscss)
+* [CSS - what is that?](#whatiscss)
 * [Where do I put my CSS?](#inlinecss)
 * [Basic CSS syntax](#basiccsssyntax)
 * [Useful properties](#useful-css-properties)
