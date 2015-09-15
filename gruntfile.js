@@ -53,6 +53,19 @@ module.exports = function (grunt) {
             ],
             options: { logConcurrentOutput: true }
         },
+
+        postcss: {
+          options: {
+            map: false,
+            processors: [
+              require('autoprefixer')({browsers: 'last 2 versions'}),
+              require('cssnano')()
+            ]
+          },
+          dist: {
+            src: '_site/css/*.css'
+          }
+        }
     });
 
     // Register the grunt serve task
