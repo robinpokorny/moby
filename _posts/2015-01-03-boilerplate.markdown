@@ -74,8 +74,8 @@ Here’s an example for that as well.
 
 So HTML elements are by default either **block boxes** or **inline boxes** (of course, there are exceptions to this rule, but we don’t have to worry about that for now). For example, `div` is a block element, and so are headings like `h1` or `h2`. `span` or `strong` on the other hand are **inline elements**. Here are lists for the different elements:
 
-* [Block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
-* [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente)
+* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Block-level elements</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente" target="_blank">Inline elements</a>
 
 For now just keep in mind, that every box has some sort of display value.
 
