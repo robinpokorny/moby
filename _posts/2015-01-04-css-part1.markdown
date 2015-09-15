@@ -125,7 +125,7 @@ anotherselector {
 }
 {% endhighlight %}
 
-This is what we call shorthand. Some properties have a shorthand format that allows us to define more properties at once, but just in one line. The order and the way it works is not always very obvious so you might need to look it up on a [reference](http://devdocs.io/css/), but don't worry too much about it for now. It's just good that you know that it exists in case you see it. If you think it's confusing, just use the non shorthand format for your own code and specify each property at a time.
+This is what we call shorthand. Some properties have a shorthand format that allows us to define more properties at once, but just in one line. The order and the way it works is not always very obvious so you might need to look it up on a <a href="http://devdocs.io/css/" target="_blank">reference</a>, but don't worry too much about it for now. It's just good that you know that it exists in case you see it. If you think it's confusing, just use the non shorthand format for your own code and specify each property at a time.
 
 ### Font-family
 The `font-family CSS property allows for a prioritized list of font family names and/or generic family names to be specified for the selected element. Unlike most other CSS properties, values are separated by a comma to indicate that they are alternatives. The browser will select the first font on the list that is installed on the computer, or that can be downloaded.
