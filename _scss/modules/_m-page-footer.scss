@@ -22,6 +22,11 @@
 .page-footer__a {
   color: $color-white;
   border-color: $color-white;
+
+  &:visited { 
+    color: $color-white;
+    border-color: $color-white;
+  }
 }
 
 .page-footer__p { margin-bottom: 0; }
