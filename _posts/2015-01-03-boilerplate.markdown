@@ -64,13 +64,13 @@ In most circumstances "normal flow" is the way that elements are laid out on a w
 
 In our example, each of these boxes are one of two different types: **inline boxes** or **block boxes**. So what exactly does this mean? Let’s start with block boxes.
 
-**Block boxes** are stacked vertically one after the other in order they’ve been written in the HTML file, and they usually occupy the whole width of the page. They normally start in the upper left corner and go down to the bottom.
+**Block boxes** are stacked vertically one after the other in the order they’ve been written in the HTML file, and they usually occupy the whole width of the page. They normally start in the upper left corner and go down to the bottom.
 
 Here is a simple example. Don’t get confused by the additional CSS. It’s just there for the purpose of making the boxes visible.
 
-**Inline Boxes** work a bit different. These boxes will also start at the upper left corner, but will arrange itselfs horizontal.
+**Inline Boxes** work a bit differently. These boxes will also start at the upper left corner, but will arrange themselves horizontally.
 
-Here’s an example for that as well.
+Here’s an example of that as well.
 
 So HTML elements are by default either **block boxes** or **inline boxes** (of course, there are exceptions to this rule, but we don’t have to worry about that for now). For example, `div` is a block element, and so are headings like `h1` or `h2`. `span` or `strong` on the other hand are **inline elements**. Here are lists for the different elements:
 
@@ -80,7 +80,7 @@ So HTML elements are by default either **block boxes** or **inline boxes** (of c
 For now just keep in mind, that every box has some sort of display value.
 
 ###HTML Boilerplate
-There is some basic structure you should not spend too much time on that is always there. Lets handle this in a very quick walkthrough (code right, line-by-line comments left):
+There is some basic structure you don't need to spend too much time on that is always there. Let's handle this in a very quick walkthrough (code right, line-by-line comments left):
 
 <div class="m-switch">
   <input class="m-switch__input" id="dark" type="radio" name="theme" onchange="darkenEverything()">
@@ -91,8 +91,8 @@ There is some basic structure you should not spend too much time on that is alwa
 {% highlight HTML %}
 <!DOCTYPE html>
 <!--This is a doctype. Every HTML file should have one.
-Basically you only need this one nowadays, as this means HTML5 (what you learn here)
-for modern browsers but old browsers still pick up on your file to be some kind of HTML.-->
+Basically you only need this one nowadays, as this means HTML5 (what you're learning here)
+for modern browsers but old browsers still pick up that your file is some kind of HTML.-->
 <html>
   <head>
     <meta charset="UTF-8">
@@ -176,7 +176,7 @@ linebreak.
 {% endhighlight %}
 
 #### Images
-The image tag is special as it is self-closing, it has no closing tag (like the break tag). It also has a special attribute the src which carries the path to the actual image. The alt attribute is a placeholder, if the image does for some reason not load.
+The image tag is special as it is self-closing, it has no closing tag (like the break tag). It also has a special attribute the src which carries the path to the actual image. The alt attribute is a placeholder, if for some reason the image does not load.
 
 <div class="m-switch">
   <input class="m-switch__input" id="dark" type="radio" name="theme" onchange="darkenEverything()">
@@ -202,7 +202,7 @@ Links take the user to another page. The tag is simply an a which stands for anc
 {% endhighlight %}
 
 #### Div
-The div element is an element that does not have a special meaning or special styling. It’s perfect for grouping other elements together and assigning them a class or an id.
+The div element is an element that does not have any special meaning or special styling. It’s perfect for grouping other elements together and assigning them a class or an id.
 
 <div class="m-switch">
   <input class="m-switch__input" id="dark" type="radio" name="theme" onchange="darkenEverything()">
